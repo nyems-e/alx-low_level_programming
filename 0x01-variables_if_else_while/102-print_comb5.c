@@ -11,6 +11,7 @@ int i = 1;
 int j = 0;
 int k = 0;
 int l = 0;
+int count[] = {1,2,3,4,5,6,7,8,9};
 while (l <= 9)
 {
 while (k <= 9)
@@ -32,10 +33,10 @@ i = 0;
 j++;
 }
 j = 0;
-k++;
+i = count[++k];
 }
 k = 0;
-l++;
+j = count[++l];
 }
 return(0);
 }
