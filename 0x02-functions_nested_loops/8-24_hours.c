@@ -11,9 +11,10 @@ int i = 0;
 int j = 0;
 int k = 0;
 int l = 0;
+int track = 9;
 while (l <= 2)
 {
-while (k <= 3)
+while (k <= track)
 {
 while (j <= 5)
 {
@@ -34,6 +35,7 @@ j = 0;
 k++;
 }
 k = 0;
+track = 3;
 l++;
 }
 }
