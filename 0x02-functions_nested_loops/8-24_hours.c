@@ -37,9 +37,4 @@ k = 0;
 l++;
 }
 }
-
-int main(void)
-{
-jack_bauer();
-return 0;
 }
