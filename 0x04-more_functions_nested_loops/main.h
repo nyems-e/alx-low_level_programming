@@ -1,4 +1,4 @@
-ifndef functions
+#ifndef functions
 #define functions
 
 /**
