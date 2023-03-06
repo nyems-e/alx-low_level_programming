@@ -8,23 +8,19 @@
  * Return: pointer
  */
 
-char *_strncpy(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src,int n)
 {
 char *temp;
 int i;
 i = 0;
 temp = dest;
-while (*src != '\0' && i < n)
+while (*src != '\0' && (unsigned int)n--)
 {
 *dest = *src;
 dest++;
 src++;
-i++;
 }
-while (i < n)
-{
 *dest = '\0';
-i++;
-}
+
 return (temp);
 }
