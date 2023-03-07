@@ -2,8 +2,9 @@
 
 /**
  * _strspn - gets the length of a prefix substring
- * @s: intial segment 
+ * @s: intial segment
  * @accept: bytes to compare to
+ * Return: number of common bytes
  */
 
 unsigned int _strspn(char *s, char *accept)
@@ -13,7 +14,7 @@ int s_len = 0;
 int accept_len = 0;
 s_len = string_len(s);
 accept_len = string_len(accept);
-while(accept_len)
+while (accept_len)
 {
 while (s_len)
 {
