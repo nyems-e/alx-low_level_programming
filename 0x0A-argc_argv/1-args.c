@@ -8,7 +8,7 @@
  */
 int main(int argc, __attribute__((unused))char *argv[])
 {
-_putchar(48 + argc);
+_putchar(48 +(argc - 1));
 _putchar('\n');
 return (0);
 }
