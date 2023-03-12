@@ -6,7 +6,7 @@
  * @argv: array of arguments
  * Return: int
  */
-int main(int argc, char * argv[])
+int main(__attribute__((unused)) int argc, char * argv[])
 {
 int i = 0;
 while (argv[0][i] > '\0')
