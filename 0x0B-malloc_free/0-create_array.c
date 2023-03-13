@@ -11,10 +11,14 @@ char *create_array(unsigned int size, char c)
 {
 char  *tab;
 unsigned int index;
+char *hold = "failed to allocate memory";
 tab = malloc(sizeof(char) * size);
 if (tab == NULL)
 {
-return (NULL);
+while(*hold)
+{
+_putchar(*hold++);
+}
 }
 for (index = 0; index < size; index++)
 {
