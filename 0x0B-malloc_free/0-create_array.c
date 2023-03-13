@@ -15,15 +15,16 @@ char *hold = "failed to allocate memory";
 tab = malloc(sizeof(char) * size);
 if (tab == NULL)
 {
-while(*hold)
+while (*hold)
 {
 _putchar(*hold++);
 }
 }
+else{
 for (index = 0; index < size; index++)
 {
 tab[index] = c;
 }
 return (tab);
 }
-
+}
