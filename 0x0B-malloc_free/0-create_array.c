@@ -19,6 +19,7 @@ while (*hold)
 {
 _putchar(*hold++);
 }
+_putchar('\n');
 }
 else{
 for (index = 0; index < size; index++)
