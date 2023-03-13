@@ -11,7 +11,7 @@ char *create_array(unsigned int size, char c)
 {
 char  *tab;
 unsigned int index;
-char hold[] = "failed to allocate memory";
+char *hold = "failed to allocate memory";
 tab = malloc(sizeof(char) * size);
 if (tab == NULL)
 {
