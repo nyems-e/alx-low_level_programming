@@ -20,8 +20,10 @@ while (*hold)
 _putchar(*hold++);
 }
 _putchar('\n');
+_putchar('a');
 }
-else{
+else
+{
 for (index = 0; index < size; index++)
 {
 tab[index] = c;
