@@ -25,6 +25,6 @@ for (index = 0; index < size; index++)
 {
 tab[index] = c;
 }
-return (tab);
 }
+return (tab);
 }
