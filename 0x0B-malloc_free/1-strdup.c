@@ -15,7 +15,7 @@ if (str == NULL)
 {
 return (NULL);
 }
-len = string_len(str);	
+len = string_len(str);
 new_str = malloc(sizeof(char) * len + 1);
 
 if (new_str == NULL)
