@@ -8,13 +8,15 @@
  */
 char *_strdup(char *str)
 {
+char *new_str;
 int len = string_len(str);
+
 if(str == NULL)
 {
 return (NULL);
 }
 	
-char *new_str = malloc(sizeof(char) * len);
+new_str = malloc(sizeof(char) * len);
 
 if(new_str == NULL)
 {
