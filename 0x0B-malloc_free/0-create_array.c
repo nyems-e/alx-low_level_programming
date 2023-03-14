@@ -24,7 +24,7 @@ if (tab == NULL)
 *_putchar('a');
 *}
 */
-return (null);
+return (NULL);
 }
 else
 {
