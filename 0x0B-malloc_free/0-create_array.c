@@ -15,15 +15,6 @@ unsigned int index;
 tab = malloc(sizeof(char) * size);
 if (size == 0 || tab == NULL)
 {
-/**
-*while (*hold)
-*{
-*_putchar(*hold++);
-*}
-*_putchar('\n');
-*_putchar('a');
-*}
-*/
 return (NULL);
 }
 else
