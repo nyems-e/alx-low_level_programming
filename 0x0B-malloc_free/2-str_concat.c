@@ -28,7 +28,7 @@ if (concat_s == NULL)
 return (NULL);
 }
 _memcpy(concat_s, s1, len_1);
-_memcpy(concat_s + len1, s2,, len2 + 1);
+_memcpy(concat_s + len_1, s2, len_2 + 1);
 r:wq
 eturn (concat_s);
 }
