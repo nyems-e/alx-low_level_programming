@@ -13,7 +13,7 @@ char  *tab;
 unsigned int index;
 
 tab = malloc(sizeof(char) * size);
-if (size == 0 || tab = NULL)
+if (size == 0 || tab == NULL)
 {
 /**
 *while (*hold)
