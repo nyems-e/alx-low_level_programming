@@ -33,7 +33,7 @@ return (concat_s);
 }
 
 /**
- * _strlen - length of string
+ * _string_len - length of string
  *
  * @s: string
  * Return: length of string
