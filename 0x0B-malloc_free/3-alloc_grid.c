@@ -4,7 +4,7 @@
 /**
  * alloc_grid - allocate memory for 2D array
  * @width: int
- * @heigh: int
+ * @height: int
  */
 
 int **alloc_grid(int width, int height)
