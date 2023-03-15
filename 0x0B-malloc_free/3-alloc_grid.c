@@ -22,9 +22,9 @@ for (i = 0; i < height; i++)
 grid[i] = malloc(width * sizeof(int));
 }
 
-for (int i = 0; i < height; i++)
+for (i = 0; i < height; i++)
 {
-for (int j = 0; j < width; j++)
+for (j = 0; j < width; j++)
 {
 grid[i][j] = 0;
 }
