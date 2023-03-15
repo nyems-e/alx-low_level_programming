@@ -30,9 +30,8 @@ new_str[str_index] = *m_arg++;
 str_index++;
 }
 new_str[str_index] = '\0';
-
-return (new_str);
 }
+return (new_str);
 }
 
 
@@ -51,7 +50,7 @@ int i;
 char *f_arg;
 for (i = 0; i < al; i++)
 {
-*f_arg = s[i];
+f_arg = s[i];
 while (*f_arg)
 {
 len++;
