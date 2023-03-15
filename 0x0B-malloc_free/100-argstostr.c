@@ -56,6 +56,7 @@ while (*f_arg)
 len++;
 f_arg++;
 }
+len++;
 }
 return (len);
 }
