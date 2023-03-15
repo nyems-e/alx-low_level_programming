@@ -35,7 +35,7 @@ while (*m_arg)
 {
 new_str[str_index++] = *m_arg++;
 }
-new_str[str_index] = '\n';
+new_str[str_index++] = '\n';
 }
 new_str[str_index] = '\0';
 return (new_str);
