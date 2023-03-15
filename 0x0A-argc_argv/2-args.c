@@ -11,10 +11,11 @@ int main(int argc, char **argv)
 {
 char *temp;
 int i;
+int j;
 for (i = 0; i < argc; i++)
 {
-char *temp = argv[i];
-for (int j =0; temp[j] != '\0'; j++)
+temp = argv[i];
+for (j =0; temp[j] != '\0'; j++)
 {
 _putchar(temp[j]);
 }
