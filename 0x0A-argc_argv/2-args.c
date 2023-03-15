@@ -15,7 +15,7 @@ int j;
 for (i = 0; i < argc; i++)
 {
 temp = argv[i];
-for (j =0; temp[j] != '\0'; j++)
+for (j = 0; temp[j] != '\0'; j++)
 {
 _putchar(temp[j]);
 }
