@@ -9,17 +9,24 @@
  */
 char *argstostr(int ac, char **av)
 {
-int len;
+int len = 0;
 char *new_str;
 char *m_arg;
 int i;
-int str_index;
+int str_index = 0;
 if (ac == 0 || av == NULL)
 {
 return (NULL);
 }
+
+
 len = _strlen(av,ac);
 new_str = malloc(sizeof(char) * len);
+if (new_str == NULL)
+{
+return (NULL);
+}
+
 
 for (i = 0; i < ac; i++)
 {
@@ -29,8 +36,9 @@ while (*m_arg)
 new_str[str_index] = *m_arg++;
 str_index++;
 }
-new_str[str_index] = '\0';
+new_str[str_index] = '\n';
 }
+new_str[str_index] = '\0';
 return (new_str);
 }
 
