@@ -18,7 +18,7 @@ if (ac == 0 || av == NULL)
 {
 return (NULL);
 }
-len = _strlen(av,al);
+len = _strlen(av,ac);
 new_str = malloc(sizeof(char) * len);
 
 for (i = 0; i < ac; i++)
