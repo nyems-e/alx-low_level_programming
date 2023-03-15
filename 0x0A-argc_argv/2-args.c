@@ -14,9 +14,9 @@ int i;
 for (i = 0; i < argc; i++)
 {
 char *temp = argv[i];
-while (*temp)
+for (int j =0; temp[j] != '\0'; j++)
 {
-_putchar(*temp++);
+_putchar(temp[j]);
 }
 _putchar('\n');
 }
