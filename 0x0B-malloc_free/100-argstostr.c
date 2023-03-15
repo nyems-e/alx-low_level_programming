@@ -33,8 +33,7 @@ for (i = 0; i < ac; i++)
 m_arg  = av[i];
 while (*m_arg)
 {
-new_str[str_index] = *m_arg++;
-str_index++;
+new_str[str_index++] = *m_arg++;
 }
 new_str[str_index] = '\n';
 }
