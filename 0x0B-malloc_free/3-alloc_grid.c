@@ -1,6 +1,12 @@
 #include "main.h"
 #include <stdlib.h>
 
+/**
+ * alloc_grid - allocate memory for 2D array
+ * @width: int
+ * @heigh: int
+ */
+
 int **alloc_grid(int width, int height)
 {
 int **grid;
