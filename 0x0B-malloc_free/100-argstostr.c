@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * argtostr - concatenate arguments of program
+ * argstostr - concatenate arguments of program
  * @ac: number of arguments
  * @av: arrys of arguments
  * Return: char *
@@ -20,7 +20,7 @@ return (NULL);
 }
 
 
-len = _strlen(av,ac);
+len = _strlen(av, ac);
 new_str = malloc(sizeof(char) * (len + 1));
 if (new_str == NULL)
 {
@@ -50,7 +50,7 @@ return (new_str);
  * @al: length of array
  * Return: length of string
  */
-int _strlen(char **s,int al)
+int _strlen(char **s, int al)
 {
 int len = 0;
 int i;
