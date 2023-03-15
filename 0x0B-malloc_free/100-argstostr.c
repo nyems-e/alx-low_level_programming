@@ -21,7 +21,7 @@ return (NULL);
 
 
 len = _strlen(av,ac);
-new_str = malloc(sizeof(char) * len);
+new_str = malloc(sizeof(char) * (len + 1));
 if (new_str == NULL)
 {
 return (NULL);
