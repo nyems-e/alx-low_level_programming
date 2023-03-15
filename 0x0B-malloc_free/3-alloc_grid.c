@@ -15,6 +15,10 @@ grid = malloc(height * sizeof(int *));
 
 if (grid == NULL)
 {
+for (j = 0; j < i; j++)
+{
+free(grid);
+}
 free(grid);
 return (NULL);
 }
