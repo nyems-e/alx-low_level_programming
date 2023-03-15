@@ -8,4 +8,6 @@ char *_memcpy(char *dest, char *src, unsigned int n);
 int string_len(char *);
 char *str_concat(char *s1, char *s2);
 void free_grid(int **grid, int height);
+char *argtostr(int ac, char **av);
+int _strlen(char **s);
 #endif
