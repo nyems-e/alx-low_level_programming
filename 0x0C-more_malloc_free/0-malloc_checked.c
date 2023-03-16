@@ -3,7 +3,7 @@
 /**
  * malloc_checked - allocate memory
  * @b:size of memeory to allocate
- *Retur: void *
+ *Return: void *
  */
 void *malloc_checked(unsigned int b)
 {
