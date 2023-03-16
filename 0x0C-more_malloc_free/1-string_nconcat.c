@@ -8,10 +8,10 @@
  * @n: int
  * Return: char *
  */
-char *string_nconcat(char *s1, char *S2, unsigned int n)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-int len1;
-int len2;
+unsigned int len1;
+unsigned int len2;
 char *new_str;
 if (s1 == NULL)
 {
