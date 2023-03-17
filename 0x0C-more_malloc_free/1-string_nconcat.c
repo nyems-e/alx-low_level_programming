@@ -18,7 +18,7 @@ if (s1 == NULL)
 s1 = "";
 }
 if (s2 == NULL)
-{
+{ 
 s2 = "";
 }
 len1 = string_len(s1);
@@ -29,7 +29,7 @@ n = len2;
 }
 
 new_str = malloc(sizeof(char) * (len1 + n + 1));
-if (newstr == NULL)
+if (new_str == NULL)
 {
 return (NULL);
 }
@@ -62,7 +62,7 @@ return (temp);
 }
 
 /**
- * _strlen - length of string
+ * string_len - length of string
  *
  * @s: string
  * Return: length of string
