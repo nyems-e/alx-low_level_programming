@@ -1,8 +1,7 @@
 #include <stdlib.h>
 #include "main.h"
-#include <stdio.h>
-/**
- * string_nconcat - cocatenates two strings
+
+/** string_nconcat - cocatenates two strings
  * @s1:char *
  * @s2:char *
  * @n: int
