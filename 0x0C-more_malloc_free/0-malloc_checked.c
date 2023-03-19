@@ -5,6 +5,7 @@
  * @b:size of memeory to allocate
  *Return: void *
  */
+
 void *malloc_checked(unsigned int b)
 {
 void *mem;

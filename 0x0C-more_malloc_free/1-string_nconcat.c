@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include "main.h"
-
+#include <stdio.h>
 /**
  * string_nconcat - cocatenates two strings
  * @s1:char *
@@ -10,8 +10,8 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-unsigned int len1;
-unsigned int len2;
+unsigned int len1 = 0;
+unsigned int len2 = 0;
 char *new_str;
 if (s1 == NULL)
 {
@@ -33,22 +33,22 @@ if (new_str == NULL)
 {
 return (NULL);
 }
-_memcpy(new_str, s1, len1);
-_memcpy(new_str + len1, s2, n);
+new_str = memcpy(new_str, s1, len1);
+new_str = memcpy(new_str + len1, s2, n);
 
-new_str[len1 + n] = '\0';
+new_str[len + n] = '\0'; 
 return (new_str);
 }
 
 
 /**
- * _memcpy- copy memory
+ * memcpy- copy memory
  * @dest:dest pointer
  * @src: src pointer
  * @n: number limit
  * Return: temp
  */
-char *_memcpy(char *dest, char *src, unsigned int n)
+char *memcpy(char *dest, char *src, unsigned int n)
 {
 unsigned int i = 0;
 char *temp;
