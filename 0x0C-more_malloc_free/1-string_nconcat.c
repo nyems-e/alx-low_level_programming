@@ -1,6 +1,42 @@
 #include <stdlib.h>
 #include "main.h"
 
+
+/**
+ * makecpy- copy memory
+ * @dest:dest pointer
+ * @src: src pointer
+ * @n: number limit
+ * Return: temp
+ */
+char *makecpy(char *dest, char *src, unsigned int n)
+{
+unsigned int i = 0;
+char *temp;
+temp = dest;
+while (i < n)
+{
+dest[i] = src[i];
+i++;
+}
+return (temp);
+}
+
+/**
+ * string_len - length of string
+ *
+ * @s: string
+ * Return: length of string
+ */
+int string_len(char *s)
+{
+int i = 0;
+while (s[i] > '\0')
+{
+i++;
+}
+return (i);
+}
 /** string_nconcat - cocatenates two strings
  * @s1:char *
  * @s2:char *
@@ -40,38 +76,3 @@ return (new_str);
 }
 
 
-/**
- * makecpy- copy memory
- * @dest:dest pointer
- * @src: src pointer
- * @n: number limit
- * Return: temp
- */
-char *makecpy(char *dest, char *src, unsigned int n)
-{
-unsigned int i = 0;
-char *temp;
-temp = dest;
-while (i < n)
-{
-dest[i] = src[i];
-i++;
-}
-return (temp);
-}
-
-/**
- * string_len - length of string
- *
- * @s: string
- * Return: length of string
- */
-int string_len(char *s)
-{
-int i = 0;
-while (s[i] > '\0')
-{
-i++;
-}
-return (i);
-}
