@@ -33,8 +33,8 @@ if (new_str == NULL)
 {
 return (NULL);
 }
-new_str = memcpy(new_str, s1, len1);
-new_str = memcpy(new_str + len1, s2, n);
+new_str = makecpy(new_str, s1, len1);
+new_str = makecpy(new_str + len1, s2, n);
 
 new_str[len + n] = '\0'; 
 return (new_str);
@@ -42,13 +42,13 @@ return (new_str);
 
 
 /**
- * memcpy- copy memory
+ * makecpy- copy memory
  * @dest:dest pointer
  * @src: src pointer
  * @n: number limit
  * Return: temp
  */
-char *memcpy(char *dest, char *src, unsigned int n)
+char *makecpy(char *dest, char *src, unsigned int n)
 {
 unsigned int i = 0;
 char *temp;
