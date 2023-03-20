@@ -37,6 +37,8 @@ i++;
 }
 return (i);
 }
+
+
 /** string_nconcat - cocatenates two strings
  * @s1:char *
  * @s2:char *
@@ -74,5 +76,3 @@ new_str = makecpy(new_str + len1, s2, n);
 new_str[len + n] = '\0'; 
 return (new_str);
 }
-
-
