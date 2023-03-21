@@ -2,10 +2,10 @@
 
 /**
  * init_dog - dog
- * @d:
- * @name:
- * @age:
- * @owner:
+ * @d: pointer to struc dog
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: owner
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
