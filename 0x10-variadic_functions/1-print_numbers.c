@@ -22,7 +22,8 @@ else
 {
 printf("%d%s ", va_arg(ap, int), separator);
 }
+}
 va_end(ap);
 _putchar('\n');
-}
+
 }
