@@ -11,7 +11,7 @@ if (n < 0)
 {
 return (-1);
 }
-sqrt_search(n, 0, n);
+return (sqrt_search(n, 0, n));
 }
 
 /**
