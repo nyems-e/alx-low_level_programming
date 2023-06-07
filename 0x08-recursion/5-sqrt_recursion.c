@@ -43,4 +43,5 @@ else
 {
 return sqrt_search(n, mid + 1, end);
 }
+}
 
