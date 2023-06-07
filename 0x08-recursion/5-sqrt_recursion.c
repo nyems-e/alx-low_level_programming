@@ -35,13 +35,13 @@ if (square == n)
 {
 return (mid);
 }
-else if (square > n)
+else if (square < n)
 {
-return (sqrt_search(n, start, mid + 1));
+return (sqrt_search(n, mid + 1, end));
 }
 else
 {
-return (sqrt_search(n, mid + 1, end));
+return (sqrt_search(n, start, mid - 1));
 }
 }
 
