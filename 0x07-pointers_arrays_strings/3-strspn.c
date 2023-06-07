@@ -14,18 +14,18 @@ int s_len = 0;
 int accept_len = 0;
 s_len = string_len(s);
 accept_len = string_len(accept);
-while (accept_len)
-{
 while (s_len)
+{
+while (accept_len)
 {
 if (s[s_len] == accept[accept_len])
 {
 acc++;
 }
-s_len--;
-}
 accept_len--;
-s_len = string_len(s);
+}
+s_len--;
+accept_len = string_len(accept);
 }
 return (acc);
 }
