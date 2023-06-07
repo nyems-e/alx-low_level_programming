@@ -2,7 +2,7 @@
 
 /**
  * _sqrt_recursion- square root of number
- * @n: squared number
+ i* @n: squared number
  * Return: int
  */
 int _sqrt_recursion(int n)
@@ -11,7 +11,7 @@ if (n < 0)
 {
 return (-1);
 }
-sqrt_search(n, 0 ,n);
+sqrt_search(n, 0, n);
 }
 
 /**
@@ -29,19 +29,19 @@ if (start > end)
 {
 return (-1);
 }
-mid = (start + end)/ 2;
-square = mid * mid;
+mid = (start + end) / 2;
+square = mid *mid;
 if (square == n)
 {
 return (mid);
 }
-else if(square > n)
+else if (square > n)
 {
-return sqrt_search(n, start, mid + 1);
+return (sqrt_search(n, start, mid + 1));
 }
 else
 {
-return sqrt_search(n, mid + 1, end);
+return (sqrt_search(n, mid + 1, end));
 }
 }
 
