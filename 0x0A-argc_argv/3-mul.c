@@ -25,7 +25,7 @@ return (1);
 numA = atoi(argv[1]);
 numB = atoi(argv[2]);
 result = numA *numB;
-printf("%d",result);
+printf("%d\n",result);
 return (0);
 }
 
