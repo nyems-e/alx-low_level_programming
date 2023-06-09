@@ -25,13 +25,13 @@ return (1);
 numA = atoi(argv[1]);
 numB = atoi(argv[2]);
 result = numA *numB;
-printf("%d\n",result);
+printf("%d\n", result);
 return (0);
 }
 
 
 /**
-  printNumber- print number using putchar
+ * printNumber- print number using putchar
  * @num: number
  * Return: void
  */
