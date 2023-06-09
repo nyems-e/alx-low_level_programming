@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include <stdlib.h>
+#include <stdio.h>
 /**
  * main- main
  * @argc: arg count
@@ -21,16 +22,16 @@ _putchar(e_String[i]);
 }
 return (1);
 }
-numA = _atoi(argv[1]);
-numB = _atoi(argv[2]);
+numA = atoi(argv[1]);
+numB = atoi(argv[2]);
 result = numA *numB;
-printNumber(result);
+printf("%d",result);
 return (0);
 }
 
 
 /**
- * print_number- print number using putchar
+  printNumber- print number using putchar
  * @num: number
  * Return: void
  */
@@ -56,32 +57,5 @@ while (rev_Num > 0)
 _putchar('0' + (rev_Num % 10));
 num = num / 10;
 }
-}
-
-/**
- * _atoi- string to integer
- * @str: string
- * Return: int
- */
-int _atoi(char *str)
-{
-int result = 0;
-int sign = 1;
-int i = 0;
-if (str[i] == '-')
-{
-sign = -1;
-i++;
-}
-else
-{
-i++;
-}
-while (str[i] >= '0' && str[i] <= '9')
-{
-result = result * 10 + (str[i] - '0');
-i++;
-}
-return (result *sign);
 }
 
