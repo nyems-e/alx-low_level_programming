@@ -11,18 +11,21 @@ int main(int argc, char *argv[])
 char *e_String = "Error\n";
 int numA = 0;
 int numB = 0;
+int i;
+int result;
 if (argc != 3)
 {
-for(i = 0; e_String[i] != '\0'; i++)
+for (i = 0; e_String[i] != '\0'; i++)
 {
 _putchar(e_String[i]);
 }
 return (1);
 }
-numA = atoi(argv[1]);
-numB = atoi(argv[2]);
-result = numA * numB;
-printNumber(result); 
+numA = _atoi(argv[1]);
+numB = _atoi(argv[2]);
+result = numA *numB;
+printNumber(result);
+return (0);
 }
 
 
@@ -37,7 +40,6 @@ int rev_Num = 0;
 if (num == 0)
 {
 _putchar('0');
-return
 }
 if (num < 0)
 {
@@ -51,7 +53,7 @@ num = num / 10;
 }
 while (rev_Num > 0)
 {
-_putchar('0' + (rev % 10));
+_putchar('0' + (rev_Num % 10));
 num = num / 10;
 }
 }
@@ -61,7 +63,7 @@ num = num / 10;
  * @str: string
  * Return: int
  */
-int atoi(char *str)
+int _atoi(char *str)
 {
 int result = 0;
 int sign = 1;
@@ -80,6 +82,6 @@ while (str[i] >= '0' && str[i] <= '9')
 result = result * 10 + (str[i] - '0');
 i++;
 }
-return (result * sign);
+return (result *sign);
 }
-`
+
