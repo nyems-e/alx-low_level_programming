@@ -13,13 +13,13 @@ int *arr;
 int i;
 if (min > max)
 {
-return NULL;
+return (NULL);
 }
 size = max - min + 1;
-arr = (int *)malloc(size * sizeof(int));
+arr = (int *)malloc(size *sizeof(int));
 if (arr == NULL)
 {
-return NULL;
+return (NULL);
 }
 for (i = 0; i < size; i++)
 {
