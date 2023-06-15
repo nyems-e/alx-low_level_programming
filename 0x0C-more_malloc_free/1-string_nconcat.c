@@ -9,17 +9,14 @@
  * @n: number limit
  * Return: temp
  */
-char *makecpy(char *dest, char *src, unsigned int n)
+void makecpy(char *dest, char *src, unsigned int n)
 {
 unsigned int i = 0;
-char *temp;
-temp = dest;
 while (i < n)
 {
 dest[i] = src[i];
 i++;
 }
-return (temp);
 }
 
 /**
@@ -39,7 +36,8 @@ return (i);
 }
 
 
-/** string_nconcat - cocatenates two strings
+/**
+ * string_nconcat - cocatenates two strings
  * @s1:char *
  * @s2:char *
  * @n: int
@@ -55,7 +53,7 @@ if (s1 == NULL)
 s1 = "";
 }
 if (s2 == NULL)
-{ 
+{
 s2 = "";
 }
 len1 = string_len(s1);
@@ -70,10 +68,9 @@ if (new_str == NULL)
 {
 return (NULL);
 }
-new_str = makecpy(new_str, s1, len1);
-new_str = makecpy(new_str + len1, s2, n);
-
-new_str[len + n] = '\0'; 
+makecpy(new_str, s1, len1);
+makecpy(new_str + len1, s2, n);
+new_str[len1 + n] = '\0';
 return (new_str);
 }
 
