@@ -10,5 +10,6 @@ int string_len(char *);
 void makecpy(char *dest, char *src, unsigned int n);
 void *_calloc(unsigned int nmemb, unsigned int size);
 void _memset(void *ptr, unsigned int value, unsigned int num);
+int *array_range(int min, int max);
 #endif
 
