@@ -9,7 +9,7 @@
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-if (_strcmp(name,"") != 0 && _strcmp(owner,"") != 0 && age != 0)
+if (_strcmp(name, "") != 0 && _strcmp(owner, "") != 0 && age != 0)
 {
 d->name = name;
 d->age = age;
