@@ -20,3 +20,4 @@ typedef struct dog dog_t;
 dog_t *new_dog(char *name, float age, char *owner);
 int string_len(char *s);
 #endif /* DOG_H */
+
