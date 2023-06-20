@@ -1,5 +1,5 @@
 #include "dog.h"
-
+#include <stdlib.h>
 /**
  * init_dog - dog
  * @d: pointer to struc dog
@@ -9,13 +9,18 @@
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-if (_strcmp(name, "") != 0 && _strcmp(owner, "") != 0 && age != 0)
+if (d == NULL)
+{
+d = malloc(sizeof(struct dog));
+}
+if (d != NULL && _strcmp(name, "") != 0 && _strcmp(owner, "") != 0 && age != 0)
 {
 d->name = name;
 d->age = age;
 d->owner = owner;
 }
 }
+
 
 /**
  * _strcmp-compare strings
