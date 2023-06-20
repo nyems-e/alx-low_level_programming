@@ -10,8 +10,6 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *dog_ptr;
-char *name_loc;
-char *owner_loc;
 int len_name;
 int len_owner;
 len_name = string_len(name);
@@ -22,21 +20,15 @@ if (dog_ptr == NULL)
 {
 return (NULL);
 }
-name_loc = malloc(sizeof(char) * len_name);
-if (name_loc  == NULL)
+dog_ptr->name = malloc(sizeof(char) * len_name);
+dog_ptr->owner = malloc(sizeof(char) * len_owner);
+if (dog_ptr->name == NULL || dog_ptr->owner == NULL)
 {
+free(dog_ptr->name);
+free(dog_ptr->owner);
 free(dog_ptr);
 return (NULL);
 }
-owner_loc = malloc(sizeof(char) * len_owner);
-if (owner_loc == NULL)
-{
-free(dog_ptr);
-free(name_loc);
-return (NULL);
-}
-name_loc = name;
-owner_loc = owner;
 dog_ptr->name = name;
 dog_ptr->age = age;
 dog_ptr->owner = owner;
