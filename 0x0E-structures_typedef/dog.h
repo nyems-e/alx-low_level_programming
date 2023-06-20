@@ -20,5 +20,6 @@ typedef struct dog dog_t;
 dog_t *new_dog(char *name, float age, char *owner);
 int string_len(char *s);
 int _strcmp(char *s1, char *s2);
+char *_strcpy(char *dest, char *src);
 #endif /* DOG_H */
 
