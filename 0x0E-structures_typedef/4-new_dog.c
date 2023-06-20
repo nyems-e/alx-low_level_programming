@@ -16,9 +16,8 @@ int len_name;
 int len_owner;
 len_name = string_len(name);
 len_owner = string_len(owner);
-
 dog_ptr = malloc(sizeof(dog_t));
-if (dog_ptr == NULL)
+if (name == NULL || owner == NULL || dog_ptr == NULL)
 {
 return (NULL);
 }
