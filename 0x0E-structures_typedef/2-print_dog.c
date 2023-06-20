@@ -25,5 +25,9 @@ else
 printf("Name: %s\nAge: %f\nOwner: %s", d->name, d->age, d->owner);
 }
 }
+else
+{
+printf("nothing");
+}
 }
 
