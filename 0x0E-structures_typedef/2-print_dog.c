@@ -10,7 +10,7 @@ if (d != NULL)
 {
 if (d->name == NULL && d->owner == NULL)
 {
-printf("Name: (nil)\nAge: %f\nOwner: (nil)\n",d->age);
+printf("Name: (nil)\nAge: %f\nOwner: (nil)\n", d->age);
 }
 else if (d->owner == NULL)
 {
