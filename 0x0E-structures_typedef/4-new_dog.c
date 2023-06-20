@@ -16,7 +16,7 @@ int len_name;
 int len_owner;
 if (name == NULL || owner == NULL)
 {
-return(NULL);
+return (NULL);
 }
 len_name = string_len(name);
 len_owner = string_len(owner);
@@ -27,7 +27,7 @@ return (NULL);
 }
 dog_ptr->name = malloc(sizeof(char) * len_name);
 dog_ptr->owner = malloc(sizeof(char) * len_owner);
-if (dog_ptr->name == NULL || dog_ptr->owner == NULL)i
+if (dog_ptr->name == NULL || dog_ptr->owner == NULL)
 {
 free(dog_ptr->name);
 free(dog_ptr->owner);
