@@ -19,5 +19,6 @@ else
 free(d->owner);
 free(d);
 }
+free(d);
 }
 }
