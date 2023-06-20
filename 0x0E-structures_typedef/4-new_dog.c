@@ -1,10 +1,12 @@
 #include "dog.h"
 #include <stdlib.h>
+
 /**
- * new_dog - creates new dog
+ * new_dog- creates new dog
  * @name: name
  * @age: age
  * @owner: owner
+ * Return: NULL or dog_ *
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
@@ -49,5 +51,4 @@ length++;
 }
 return (length);
 }
-
 
