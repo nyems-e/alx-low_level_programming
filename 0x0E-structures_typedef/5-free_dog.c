@@ -3,6 +3,8 @@
 
 void free_dog(dog_t *d)
 {
+if (d != NULL)
+{
 if (d->name == NULL && d->owner == NULL)
 {
 free(d);
@@ -16,5 +18,6 @@ else
 {
 free(d->owner);
 free(d);
+}
 }
 }
