@@ -25,8 +25,8 @@ if (dog_ptr == NULL)
 {
 return (NULL);
 }
-dog_ptr->name = malloc(sizeof(char) * len_name);
-dog_ptr->owner = malloc(sizeof(char) * len_owner);
+dog_ptr->name = malloc(sizeof(char) * len_name + 1);
+dog_ptr->owner = malloc(sizeof(char) * len_owner + 1);
 if (dog_ptr->name == NULL || dog_ptr->owner == NULL)
 {
 free(dog_ptr->name);
