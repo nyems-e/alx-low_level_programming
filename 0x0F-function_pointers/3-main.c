@@ -2,8 +2,8 @@
 #include <stdio.h>
 /**
  * main- main
- * @argc- number of CLI arguments
- * @argv- arguments
+ * @argc: number of CLI arguments
+ * @argv: arguments
  * Return: Always 0
  */
 int main(int argc __attribute__((unused)), char *argv[])
@@ -31,6 +31,6 @@ printf("Error\n");
 exit(100);
 }
 result = operation(num1, num2);
-printf("%d\n",result);
+printf("%d\n", result);
 return (0);
 }
