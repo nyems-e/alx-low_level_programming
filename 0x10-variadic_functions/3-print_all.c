@@ -8,8 +8,6 @@
 
 void print_all(const char * const format, ...)
 {
-if (format  != NULL)
-{
 va_list args;
 int i;
 int j;
@@ -20,7 +18,7 @@ i = 0;
 j = 0;
 para = "";
 va_start(args, format);
-while (format[i] != '\0')
+while (format != NULL && format[i] != '\0')
 {
 j = 0;
 while (spec_grp[j].specifier != NULL)
@@ -37,7 +35,7 @@ i++;
 va_end(args);
 printf("\n");
 }
-}
+
 
 /**
  * print_char- print a character
