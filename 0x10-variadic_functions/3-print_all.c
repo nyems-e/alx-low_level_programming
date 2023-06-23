@@ -8,6 +8,8 @@
 
 void print_all(const char * const format, ...)
 {
+if (format  != NULL)
+{
 va_list args;
 int i;
 int j;
@@ -35,7 +37,7 @@ i++;
 va_end(args);
 printf("\n");
 }
-
+}
 
 /**
  * print_char- print a character
@@ -75,5 +77,11 @@ printf("%f", (float)va_arg(args, double));
  */
 void print_string(va_list args)
 {
-printf("%s", va_arg(args, char *));
+char *str = va_arg(args, char *);
+if (str == NULL)
+{
+printf("(nil)");
+return;
+}
+printf("%s", str);
 }
