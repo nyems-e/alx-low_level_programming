@@ -40,6 +40,7 @@ printf("\n");
 /**
  * print_char- print a character
  * @args: va_list type
+ * @para: separator
  * Return Nothing
  */
 void print_char(va_list args, char *para)
@@ -51,6 +52,7 @@ printf("%s%c", para, (char)va_arg(args, int));
 /**
 * print_int- print an integer
 * @args: va_list type
+* @para: separator
 * Return Nothing
 */
 void print_int(va_list args, char *para)
@@ -63,6 +65,7 @@ printf("%s%d", para, va_arg(args, int));
 /**
  * print_float- print a float
  * @args: va_list type
+ * @para: separator
  * Return Nothing
  */
 void print_float(va_list args, char *para)
@@ -73,6 +76,7 @@ printf("%s%f", para, (float)va_arg(args, double));
 /**
  * print_string- print a string
  * @args: va_list type
+ * @para: separator
  * Return Nothing
  */
 void print_string(va_list args, char *para)
@@ -80,7 +84,7 @@ void print_string(va_list args, char *para)
 char *str = va_arg(args, char *);
 if (str == NULL)
 {
-printf("(nil)");
+printf(", (nil)");
 return;
 }
 printf("%s%s", para, str);
