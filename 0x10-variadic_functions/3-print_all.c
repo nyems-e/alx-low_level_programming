@@ -13,11 +13,12 @@ if (format  != NULL)
 va_list args;
 int i;
 int j;
-type_spec spec_grp[5] = {{"c", print_char}, {"i", print_int}, {"f", print_float}, {"s", print_string}, {NULL, NULL}};
+type_spec spec_grp[5] = {{"c", print_char}, {"i", print_int},
+{"f", print_float}, {"s", print_string}, {NULL, NULL}};
 i = 0;
 j = 0;
 va_start(args, format);
-while (format[i] != '\0') 
+while (format[i] != '\0')
 {
 j = 0;
 while (spec_grp[j].specifier != NULL)
