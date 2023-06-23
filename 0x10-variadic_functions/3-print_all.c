@@ -28,7 +28,7 @@ j++;
 }
 if (format[i + 1] != '\0')
 {
-printf(",");
+printf(", ");
 }
 i++;
 }
