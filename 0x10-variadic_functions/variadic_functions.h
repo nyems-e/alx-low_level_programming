@@ -10,7 +10,7 @@
 typedef struct op
 {
     char *specifier;
-    void (*fun)(va_list);
+    void (*fun)(va_list, char *);
 } type_spec;
 
 
@@ -19,10 +19,10 @@ void _putchar(int);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
-void print_char(va_list args);
-void print_int(va_list args);
-void print_float(va_list args);
-void print_string(va_list args);
+void print_char(va_list args, char *para);
+void print_int(va_list args, char *para);
+void print_float(va_list args, char *para);
+void print_string(va_list args, char *para);
 
 
 #endif

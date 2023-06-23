@@ -13,10 +13,12 @@ if (format  != NULL)
 va_list args;
 int i;
 int j;
+char *para;
 type_spec spec_grp[5] = {{"c", print_char}, {"i", print_int},
 {"f", print_float}, {"s", print_string}, {NULL, NULL}};
 i = 0;
 j = 0;
+para = "";
 va_start(args, format);
 while (format[i] != '\0')
 {
@@ -25,11 +27,8 @@ while (spec_grp[j].specifier != NULL)
 {
 if (format[i] == *(spec_grp[j].specifier))
 {
-spec_grp[j].fun(args);
-if (format[i + 1] != '\0')
-{
-printf(", ");
-}
+spec_grp[j].fun(args, para);
+para = ", ";
 }
 j++;
 }
@@ -45,9 +44,9 @@ printf("\n");
  * @args: va_list type
  * Return Nothing
  */
-void print_char(va_list args)
+void print_char(va_list args, char *para)
 {
-printf("%c", (char)va_arg(args, int));
+printf("%s%c", para, (char)va_arg(args, int));
 }
 
 
@@ -56,19 +55,21 @@ printf("%c", (char)va_arg(args, int));
 * @args: va_list type
 * Return Nothing
 */
-void print_int(va_list args)
+void print_int(va_list args, char *para)
 {
-printf("%d", va_arg(args, int));
+printf("%s%d", para, va_arg(args, int));
 }
+
+
 
 /**
  * print_float- print a float
  * @args: va_list type
  * Return Nothing
  */
-void print_float(va_list args)
+void print_float(va_list args, char *para)
 {
-printf("%f", (float)va_arg(args, double));
+printf("%s%f", para, (float)va_arg(args, double));
 }
 
 /**
@@ -76,7 +77,7 @@ printf("%f", (float)va_arg(args, double));
  * @args: va_list type
  * Return Nothing
  */
-void print_string(va_list args)
+void print_string(va_list args, char *para)
 {
 char *str = va_arg(args, char *);
 if (str == NULL)
@@ -84,5 +85,5 @@ if (str == NULL)
 printf("(nil)");
 return;
 }
-printf("%s", str);
+printf("%s%s", para, str);
 }
