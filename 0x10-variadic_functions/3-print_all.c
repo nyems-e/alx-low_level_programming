@@ -23,12 +23,12 @@ while (spec_grp[j].specifier != NULL)
 if (format[i] == *(spec_grp[j].specifier))
 {
 spec_grp[j].fun(args);
-}
-j++;
-}
 if (format[i + 1] != '\0')
 {
 printf(", ");
+}
+}
+j++;
 }
 i++;
 }
