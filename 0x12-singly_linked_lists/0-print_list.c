@@ -1,5 +1,5 @@
 #include "lists.h"
-#include <stdio.h>
+
 /**
  * print_list- print linked list
  * @h: list_t
@@ -9,12 +9,16 @@ size_t print_list(const list_t *h)
 {
 	size_t acc = 0;
 
-	while (h->next != NULL)
+	while (h != NULL)
 	{
 		if (h->str == NULL)
-			printf("[%u] (nil), 0");
+		{
+			printf("[%u] (nil)\n", 0);
+		}
 		else
+		{
 			printf("[%u] %s\n", h->len, h->str);
+		}
 		acc++;
 		h = h->next;
 	}
