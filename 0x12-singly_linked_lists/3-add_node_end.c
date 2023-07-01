@@ -39,7 +39,7 @@ temp->str = strdup(str);
 if (temp->str == NULL)
 {
 	free(temp);
-	return(NULL);
+	return (NULL);
 }
 temp->len = _strlen_recursion(temp->str);
 temp->next = NULL;
