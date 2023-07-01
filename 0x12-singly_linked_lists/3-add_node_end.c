@@ -1,4 +1,6 @@
 #include "lists.h"
+#include <stdlib.h>
+#include <string.h>
 
 /**
  * _strlen_recursion - length of string
@@ -17,6 +19,7 @@ return (0);
 }
 }
 
+
 /**
  * add_node_end- add node to end
  * @head: pointer to first node
@@ -25,32 +28,32 @@ return (0);
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-list_t *temp = *head;
+list_t *temp;
 list_t *trck = *head;
 temp = malloc(sizeof(list_t));
 if (temp == NULL)
 {
-	return (null);
+	return (NULL);
 }
 temp->str = strdup(str);
 if (temp->str == NULL)
 {
-	free(temo)
+	free(temp);
 	return(NULL);
 }
 temp->len = _strlen_recursion(temp->str);
 temp->next = NULL;
-if (trck != NULL)
+if (trck != NULL) /*checking if linked list is empty */
 {
 	while (trck->next != NULL)
 	{
 		trck = trck->next;
 	}
-	trck = temp->next;
+	trck->next = temp;
 }
 else
 {
-	*head = temp
+	*head = temp;
 
 }
 return (temp);
