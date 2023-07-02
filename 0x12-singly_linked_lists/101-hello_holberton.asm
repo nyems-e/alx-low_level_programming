@@ -1,5 +1,5 @@
 section .data
-	str db "Hello, Holberton", 0
+	hello_Str db "Hello, Holberton", 0
 	fmt db "%s", 0
 
 section .text
@@ -7,8 +7,8 @@ section .text
 
 global _MAIN
 _MAIN:
-	mov rdi, format
-	mov rsi, hello
+	mov rdi, fmt
+	mov rsi, hello_Str
 	xor rax, rax
 
 call printf
