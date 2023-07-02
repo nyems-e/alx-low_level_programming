@@ -1,19 +1,12 @@
+
 section .data
-	hello_Str db "Hello, Holberton", 0
-	fmt db "%s", 0
+	hello_str: db "Hello, Holberton", 10, 0
 
 section .text
 	extern printf
-
-global _MAIN
-_MAIN:
-	mov rdi, fmt
-	mov rsi, hello_Str
-	xor rax, rax
-
-call printf
-
-mov eax, 60
-xor edi, edi
-syscall
+	global main
+main:
+	mov rdi, hello_str
+	mov rax, 0
+	call printf
 
