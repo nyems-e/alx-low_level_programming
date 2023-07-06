@@ -9,7 +9,7 @@ void free_listint2(listint_t **head)
 listint_t *trck;
 if (head == NULL)
 {
-	exit(98);
+	return`;
 }
 while (*head == NULL)
 {
