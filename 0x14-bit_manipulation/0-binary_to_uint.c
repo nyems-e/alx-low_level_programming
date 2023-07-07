@@ -1,5 +1,4 @@
-#
-include "main.h"
+#include "main.h"
 /**
  * binary_to_uint- binary to unsignes integer
  * @b: number as a string
