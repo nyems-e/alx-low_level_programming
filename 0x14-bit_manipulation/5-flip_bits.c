@@ -6,11 +6,11 @@
  * @m: number to flip to
  * Return: number of bits to flip
  */
- unsigned int flip_bits(unsigned long int n, unsigned long int m)
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 unsigned int count = 0;
 unsigned int num_bits;
-num_bits = n ^ m; 
+num_bits = n ^ m;
 while (num_bits > 0)
 {
 	count += (num_bits & 1);
