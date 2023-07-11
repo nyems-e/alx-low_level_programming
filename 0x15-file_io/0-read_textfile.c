@@ -4,7 +4,7 @@
  * read_textfile- read text file and print to STD OUT
  * @filename: file name
  * @letters: number of letters to be read
- * Return: actual number letter read 
+ * Return: actual number letter read
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
@@ -28,5 +28,5 @@ b_read = read(file_des, buff, letters);
 write(STDOUT_FILENO, buff, b_read);
 free(buff);
 close(file_des);
-return(b_read);
+return (b_read);
 }
