@@ -28,8 +28,9 @@ return (i);
 int append_text_to_file(const char *filename, char *text_content)
 {
 	int file_des;
-	int text_len = 0;
 	int file_des_w;
+	int text_len = 0;
+
 	if (filename == NULL)
 	{
 		return (-1);
@@ -40,10 +41,10 @@ int append_text_to_file(const char *filename, char *text_content)
 	}
 	file_des = open(filename, O_APPEND | O_WRONLY);
 	file_des_w = write(file_des, text_content, text_len);
-       	if (file_des == -1 || file_des_w == -1)
+	if (file_des == -1 || file_des_w == -1)
 	{
 		return (-1);
 	}
 	close(file_des);
 	return (1);
-}	
+}
