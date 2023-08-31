@@ -18,5 +18,3 @@ while (num_bits > 0)
 }
 return (count);
 }
-
-
