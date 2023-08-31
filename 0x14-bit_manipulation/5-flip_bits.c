@@ -13,7 +13,7 @@ unsigned long int num_bits;
 num_bits = n ^ m; /* getting the bits that are different */
 while (num_bits > 0)
 {
-	count += (num_bits & 1); /*counting number of different bits */
+	count += (num_bits & 1);
 	num_bits >>= 1; 
 }
 return (count);
