@@ -10,5 +10,5 @@ if (n > 1)
 {
 	print_binary(n >> 1);
 }
-_putchar((n & 1) + '0'); /* and-ing with 1 ensure only LSB is printed */ 
+_putchar((n & 1) + '0'); /* printing lsb */
 }
