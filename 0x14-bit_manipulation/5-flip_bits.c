@@ -10,7 +10,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 unsigned int count = 0;
 unsigned long int num_bits;
-num_bits = n ^ m; /* getting the bits that are different */
+num_bits = n ^ m; 
 while (num_bits > 0)
 {
 	count += (num_bits & 1);
