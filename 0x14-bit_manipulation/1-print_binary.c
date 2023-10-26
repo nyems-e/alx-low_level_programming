@@ -1,14 +1,14 @@
 #include "main.h"
 
-/*
+/**
  * print_binary - print binary
  * @n: integer to  be converted
  */
 void print_binary(unsigned long int n)
 {
 	size_t bit_size;
-	size_t i;
-       	char bin_num;	
+	char bin_num;
+
 	bit_size = sizeof(unsigned long int) * 8;
 	bit_size--;
 	while (bit_size >= 0)
