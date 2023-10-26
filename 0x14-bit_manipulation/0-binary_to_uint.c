@@ -8,6 +8,8 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int conv_num;
+
+
 	if (b == NULL)
 		return (0);
 	while (*b != '\0')
@@ -21,4 +23,4 @@ unsigned int binary_to_uint(const char *b)
 		b++;
 	}
 	return (conv_num);
-}			
+}
