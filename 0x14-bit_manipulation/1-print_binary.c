@@ -6,11 +6,16 @@
  */
 void print_binary(unsigned long int n)
 {
-	size_t bit_size;
-	char bin_num;
+	int bit_size;
+	int bin_num = 0;
 
 	bit_size = sizeof(unsigned long int) * 8;
 	bit_size--;
+	while (bin_num == 0)
+	{
+		bin_num = (n >> bit_size) & 1;
+		bit_size--;
+	}
 	while (bit_size >= 0)
 	{
 		bin_num = (n >> bit_size) & 1;
