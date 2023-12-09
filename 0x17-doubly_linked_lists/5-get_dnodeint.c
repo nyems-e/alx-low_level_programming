@@ -4,7 +4,7 @@
  * get_dnodeint_at_index - get node based on index
  *
  * @head: head of list
- * @indes: index
+ * @index: index
  *
  * Return: retur
  */
