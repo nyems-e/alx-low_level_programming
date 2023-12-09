@@ -12,7 +12,7 @@ size_t dlistint_len(const dlistint_t *h)
 	dlistint_t *current;
 	size_t track;
 
-	current = (dlistint_t *)h
+	current = (dlistint_t *)h;
 	track = 0;
 	while (current)
 	{
