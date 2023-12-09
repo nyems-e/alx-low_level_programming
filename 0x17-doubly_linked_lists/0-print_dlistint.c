@@ -11,6 +11,7 @@ size_t print_dlistint(const dlistint_t *h)
 {
 	dlistint_t *current;
 	size_t track;
+
 	current = (dlistint_t *)h
 	track = 0;
 	while (current)
